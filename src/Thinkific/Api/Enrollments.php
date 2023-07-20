@@ -25,7 +25,7 @@ class Enrollments extends AbstractApi{
      * @param  array, int, int
      * @return array
      */
-    protected function sendRequestFilter(array $filter, $page = 1, $limit = 25)
+    protected function sendRequestFilter(array $filter, $page = 1, $limit = 25, $unique = false, $endPoint = '')
     {
         $baseQuery = [
             'page' => $page, 
